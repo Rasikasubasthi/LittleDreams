@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: "Comic Sans MS", "Poppins", sans-serif;
+    background: linear-gradient(135deg, #ffd6f5, #cce6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-screen {
+    background: white;
+    padding: 50px 70px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    animation: float 3s ease-in-out infinite;
+}
+
+.app-title {
+    font-size: 48px;
+    color: #6a1b9a;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.start-btn {
+    padding: 15px 35px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ff8ccf, #8ec5ff);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.start-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Floating animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.hidden {
+    display: none;
+}
+
+.story-screen {
+    background: white;
+    padding: 40px 50px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.story-title {
+    color: #6a1b9a;
+    margin-bottom: 25px;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.story-card {
+    background: linear-gradient(135deg, #ffe0f0, #e0f0ff);
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.story-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.reader-screen {
+    background: white;
+    padding: 40px 50px;
+    border-radius: 25px;
+    text-align: center;
+    width: 500px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.story-box {
+    background: #f9f4ff;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 20px;
+    font-size: 18px;
+    min-height: 120px;
+}
+
+.nav-buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    background: #9c6bff;
+    color: white;
+    cursor: pointer;
+}
+
+.home-btn {
+    margin-top: 15px;
+    background: #ff8fab;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+.story-content {
+    max-height: 350px;
+    overflow-y: auto;
+    padding: 15px;
+    text-align: left;
+}
+
+.story-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    animation: fadeIn 0.8s ease;
+}
+
+.story-content img {
+    width: 100%;
+    max-width: 320px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    animation: float 4s ease-in-out infinite;
+}
+
+
+/* soft fade animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
