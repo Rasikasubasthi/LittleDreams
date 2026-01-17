@@ -5,13 +5,14 @@ LittleDreams is a cute and magical web-based storybook application designed for 
 This project is built using **HTML, CSS, and JavaScript** and is deployed using **GitHub Pages**.
 
 <h3>Home Screen</h3>
-<img src="D:\Little Dreams\screenshots\home.png.png" width="800">
+<img src="./screenshots/home.png.png" width="800">
 
 <h3>Story Selection Screen</h3>
-<img src="D:\Little Dreams\screenshots\stories.png.png" width="800">
+<img src="./screenshots/stories.png.png" width="800">
 
 <h3>Story Reader Screen</h3>
-<img src="D:\Little Dreams\screenshots\reader.png.png" width="800">
+<img src="./screenshots/reader.png.png" width="800">
+
 
 
 ✨ Features
